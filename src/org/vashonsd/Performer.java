@@ -50,7 +50,7 @@ public class Performer {
     @Override
     public String toString() {
         String result = name + ": " + description + ". ";
-        if (hits.size() > 0) {
+       if (hits.size() > 0) {
             result += "Known for the hit";
             if (hits.size() == 1) {
                 result += " \"" + hits.get(0) + ".\"";
