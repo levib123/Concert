@@ -1,5 +1,7 @@
 package org.vashonsd;
 
+import java.security.cert.CertificateParsingException;
+
 public class Main {
 
     /**
@@ -10,6 +12,7 @@ public class Main {
      * Then print out the performers.
      */
     public static void main(String[] args) {
+
         Performer Joe = new Performer("Joseph Stalin", "The Hottest Band on Earth");
         Joe.addHit("Gulag");
         //System.out.println(Joe);
@@ -27,9 +30,12 @@ public class Main {
       //  System.out.println(TS);
 
         Concert Coachella = new Concert("Coachella", "The Biggest Music Festival on Earth", "Indio, California");
+        Coachella.addPerformer(TS);
+        Coachella.addPerformer(OR);
         System.out.println(Coachella);
-        System.out.println("Top Coachella performers include: ");
-        Coachella.addHit(TS);
+
+
+
 
         //System.out.println(OR);
        // System.out.println(TS);

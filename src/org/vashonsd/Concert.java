@@ -52,17 +52,13 @@ public class Concert {
 
     }
     public String toString() {
-        String result = name + ": " + description + ". ";
-        if (performers.size() > 0) {
-            result += "Featuring Top Artists such as:";
-            if (performers.size() == 1) {
-                result += " \"" + performers.get(0) + ".\"";
-            } else {
-                result += "s \"" + String.join("\", \"", performers) + ".\"";
-            }
-        }
-        return result;
-    }
+        String result = name + ": " + description + ", " + location + "\n " + performers.toString();
 
+
+
+        return result;
+
+
+    }
 }
 
